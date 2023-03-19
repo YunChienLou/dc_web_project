@@ -1,4 +1,13 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#app')
+import { createApp } from "vue";
+import App from "./App.vue";
+import store from "./store";
+import router from "./router";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import "@/plugins/fontawsome";
+const app = createApp(App);
+app.use(router);
+app.component();
+app.component("font-awesome-icon", FontAwesomeIcon);
+app.use(store).mount("#app");
+import "bootstrap/dist/js/bootstrap.js";
+import "bootstrap/dist/css/bootstrap.min.css";

@@ -1,0 +1,67 @@
+<template>
+  <div class="my-4">
+    <div class="row flex-grow-1 align-items-center">
+      <div class="col-sm-8 mb-4">
+        <h2>地圖資訊</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14456.024811144795!2d121.5354637!3d25.0677789!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a95634669a85%3A0x6b1f772e7b78310c!2z5b63576k6LK_5piT6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1678198464469!5m2!1szh-TW!2stw"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen="true"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="col-sm-4">
+        <h2 class="">資訊列表</h2>
+        <div class="list-group">
+          <li class="list-group-item list-group-item-action">
+            <a
+              href="https://www.google.com/maps?ll=25.067779,121.535464&z=14&t=m&hl=zh-TW&gl=TW&mapclient=embed&cid=7719019327859994892"
+              >中山區建國北路三段113巷31弄15號1樓, Taipei, Taiwan</a
+            >
+          </li>
+          <li
+            class="list-group-item list-group-item-action"
+            data-bs-toggle="tooltip"
+            data-bs-html="true"
+            title="點擊複製"
+          >
+            @TCT.COMTW
+          </li>
+          <li
+            class="list-group-item list-group-item-action"
+            data-bs-toggle="tooltip"
+            data-bs-html="true"
+            title="點擊複製"
+            @click="click_copy_string()"
+          >
+            02 2515 3105
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  setup() {
+    const click_copy_string = (event) => {
+      console.log(event);
+    };
+
+    return {
+      click_copy_string,
+    };
+  },
+};
+</script>
+
+<style>
+iframe {
+  width: 100%;
+  height: 60vh;
+}
+</style>
