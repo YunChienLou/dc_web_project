@@ -2,7 +2,6 @@
   <div class="my-4">
     <div class="row flex-grow-1 align-items-center">
       <div class="col-sm-8 mb-4">
-        <h2>地圖資訊</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14456.024811144795!2d121.5354637!3d25.0677789!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a95634669a85%3A0x6b1f772e7b78310c!2z5b63576k6LK_5piT6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1678198464469!5m2!1szh-TW!2stw"
           width="600"

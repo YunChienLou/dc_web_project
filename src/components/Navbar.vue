@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse navbar-right" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            <a class="nav-link" aria-current="page" href="#">首頁</a>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/about">公司沿革</router-link>

@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="container d-flex flex-column page-height">
+  <div class="d-flex flex-column page-height">
     <router-view />
   </div>
   <Footer />

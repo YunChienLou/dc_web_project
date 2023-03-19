@@ -70,9 +70,9 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="serving-brands my-3">
-      <h1>經銷廠牌</h1>
-      <div class="container">
+    <div class="container mb-5">
+      <div class="serving-brands my-3">
+        <Heading :heading="'經銷廠商'" />
         <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
           <div class="col">
             <div class="p-3 border bg-light">Porsche 保時捷</div>
@@ -124,23 +124,24 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="shipping my-3">
-      <h1>配送方式</h1>
-      1.自取 <br />
-      2.本公司外務員配送 <br />
-      3.lalamove
-    </div>
-    <div class="online-inquery my-3">
-      <h1>線上詢價</h1>
-      1.電話: 02 2513 3105 <br />
-      2.Line : @TCT.COM
-    </div>
-    <div class="contact-info my-3">
-      <h1>聯絡我們</h1>
-      地址:中山區建國北路三段113巷31弄15號1樓, Taipei, Taiwan <br />
-      電話: 02 2513 3105 <br />
-      營業時間: 週一至週五 08:30-19:00
+      <div class="shipping my-3">
+        <Heading :heading="'配送方式'" />
+        1.自取 <br />
+        2.本公司外務員配送 <br />
+        3.lalamove
+      </div>
+      <div class="online-inquery my-3">
+        <Heading :heading="'線上詢價'" />
+        1.電話: 02 2513 3105 <br />
+        2.Line : @TCT.COM
+      </div>
+      <div class="contact-info my-3">
+        <Heading :heading="'聯絡我們'" />
+
+        地址:中山區建國北路三段113巷31弄15號1樓, Taipei, Taiwan <br />
+        電話: 02 2513 3105 <br />
+        營業時間: 週一至週五 08:30-19:00
+      </div>
     </div>
   </div>
 </template>
@@ -148,11 +149,12 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
-
+import Heading from "../components/Heading.vue";
 export default {
   name: "Home",
   components: {
     // HelloWorld
+    Heading,
   },
 };
 </script>
