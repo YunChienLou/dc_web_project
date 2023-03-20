@@ -4,13 +4,17 @@
     :title="heading"
     :paragraph="'我們提供的零部件種類，歡迎電話詢價'"
   />
+  <div class="" style="width: 100%">
+    <SearchResults />
+  </div>
 </template>
 
 <script>
 import { ref } from "vue";
 import LandingPic from "../components/LandingPic.vue";
+import SearchResults from "../components/SearchResults.vue";
 export default {
-  components: { LandingPic },
+  components: { LandingPic, SearchResults },
   setup() {
     const heading = ref("銷售產品");
     const img = ref(`car-parts.jpg`);

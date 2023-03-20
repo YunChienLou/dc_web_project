@@ -1,5 +1,5 @@
 <template>
-  <div class="my-4">
+  <div class="my-4 container text-start">
     <div class="row flex-grow-1 align-items-center">
       <div class="col-sm-8 mb-4">
         <iframe
@@ -13,8 +13,25 @@
         ></iframe>
       </div>
       <div class="col-sm-4">
-        <h2 class="">資訊列表</h2>
-        <div class="list-group">
+        <div class="my-5">
+          <h2 class="fw-bold my-3 border-bottom border-danger border-5">
+            資訊列表
+          </h2>
+          <div class="row">
+            <dt class="col-4">公司地址</dt>
+            <dd class="col-8">
+              <a
+                href="https://www.google.com/maps?ll=25.067779,121.535464&z=14&t=m&hl=zh-TW&gl=TW&mapclient=embed&cid=7719019327859994892"
+                >中山區建國北路三段113巷31弄15號1樓, Taipei, Taiwan</a
+              >
+            </dd>
+            <dt class="col-4">Line 官方帳號</dt>
+            <dd class="col-8">@TCT.COMTW</dd>
+            <dt class="col-4">公司電話</dt>
+            <dd class="col-8">02 2515 3105</dd>
+          </div>
+        </div>
+        <!-- <div class="list-group">
           <li class="list-group-item list-group-item-action">
             <a
               href="https://www.google.com/maps?ll=25.067779,121.535464&z=14&t=m&hl=zh-TW&gl=TW&mapclient=embed&cid=7719019327859994892"
@@ -38,6 +55,17 @@
           >
             02 2515 3105
           </li>
+        </div> -->
+        <div class="my-5">
+          <h2 class="fw-bold my-3 border-bottom border-danger border-5">
+            營業時間
+          </h2>
+          <div class="row">
+            <dt class="col-4">星期一 ~ 五</dt>
+            <dd class="col-8">上午 08:30 ~ 下午 18:30</dd>
+            <dt class="col-4">星期六</dt>
+            <dd class="col-8">上午 08:30 ~ 下午 17:00</dd>
+          </div>
         </div>
       </div>
     </div>

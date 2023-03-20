@@ -5,7 +5,7 @@
       :title="heading"
       :paragraph="'德群貿易，成立30年來的故事...'"
     />
-    <h1>This is an about page</h1>
+    
   </div>
 </template>
 

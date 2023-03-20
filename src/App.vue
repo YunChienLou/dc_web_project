@@ -3,14 +3,16 @@
   <div class="d-flex flex-column page-height">
     <router-view />
   </div>
+  <FixButton />
   <Footer />
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
+import FixButton from "./components/FixButton.vue";
 export default {
-  components: { Navbar, Footer },
+  components: { Navbar, Footer, FixButton },
   setup() {},
 };
 </script>
