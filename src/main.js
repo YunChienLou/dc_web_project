@@ -5,8 +5,9 @@ import router from "./router";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import "@/plugins/fontawsome";
 
+import '../src/scss/main.scss';
 import "bootstrap/dist/js/bootstrap.js";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 const app = createApp(App);
 app.use(router);

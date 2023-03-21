@@ -22,8 +22,28 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              within the <code>.accordion-body</code>, though the transition
-              does limit overflow.
+              <ul class="nav nav-fill flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Porsche
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Audi </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Volkswagen </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Skoda </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PEUGEOT </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CITROËN </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -47,8 +67,22 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              can go within the <code>.accordion-body</code>, though the
-              transition does limit overflow.
+              <ul class="nav nav-fill flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >內裝</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">外觀</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">引擎室</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">車輪</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -72,8 +106,19 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              within the <code>.accordion-body</code>, though the transition
-              does limit overflow.
+              <ul class="nav nav-fill flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >美國</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">德國</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">比利時</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -81,6 +126,24 @@
     </div>
     <div class="col-sm-9 pe-0">
       <Heading :heading="'搜尋結果'" class="mt-5" />
+      <div
+        class="row mx-5 text-start row-cols-auto overflow-auto"
+        style="max-height: 80vh"
+      >
+        <div v-for="i in 20" :key="i" class="col">
+          <div class="card" style="width: 18rem">
+            <img src="" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -94,4 +157,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.accordion-body {
+  padding: 0% 1rem;
+}
+</style>

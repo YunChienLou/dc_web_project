@@ -1,0 +1,32 @@
+[
+      {
+            "product_id":1,
+            "brand":"AUDI",
+            "name":"LED頭燈",
+            "parts":"exterior",
+            "description":"",
+            "origin":"Germany",
+            "serial_number":"3EB945531B",
+            "img":""
+      },
+      {
+            "product_id":2,
+            "brand":"VW",
+            "name":"前輪鋁圈",
+            "parts":"wheels",
+            "description":"",
+            "origin":"Belgium",
+            "serial_number":"8E0941531C",
+            "img":""
+      },
+      {
+            "product_id":3,
+            "brand":"PORSCHE",
+            "name":"方向盤",
+            "parts":"interior",
+            "description":"",
+            "origin":"USA",
+            "serial_number":"4E07A1531C",
+            "img":""
+      }
+]

@@ -13,10 +13,10 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse navbar-right" id="navbarNav">
+      <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">首頁</a>
+            <router-link class="nav-link" to="/">首頁</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/about">公司沿革</router-link>
@@ -34,7 +34,24 @@
 </template>
 
 <script>
-export default {};
+export default {
+  setup() {},
+};
 </script>
 
-<style></style>
+<style scoped>
+.router-link-active {
+  color: #ffffff;
+  font-weight: bold;
+  padding-bottom: 0;
+  border-bottom: 2px solid red;
+}
+@media screen and (max-width: 600px) {
+  .router-link-active {
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 0;
+    border-bottom: 0px;
+  }
+}
+</style>
