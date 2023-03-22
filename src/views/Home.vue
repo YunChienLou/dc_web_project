@@ -70,8 +70,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="container mb-5">
-      <div class="serving-brands my-3">
+    <div class="mb-5">
+      <div class="container serving-brands my-3">
         <Heading :heading="'經銷廠商'" />
         <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
           <div class="col">
@@ -124,18 +124,33 @@
           </div>
         </div>
       </div>
-      <div class="shipping my-3">
+      <div class="container">
+        <ImageGallery
+          :isReverse="false"
+          :title="'專業零件供應商'"
+          :paragraph="'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, expedita doloribus. Totam amet quos autem consequuntur consectetur, itaque quaerat, modi laudantium commodi recusandae quam aut excepturi nobis, tempora atque reiciendis?'"
+          :buttonText="'了解更多'"
+          :imageUrl="'p1.jpeg'"
+          :imageUrl2="'p2.jpeg'"
+          :imageUrl3="'p3.jpeg'"
+          :imageUrl4="'p4.jpg'"
+          :imageUrl5="'p1.jpeg'"
+          :imageUrl6="'p2.jpeg'"
+          :imageUrl7="'p3.jpeg'"
+        />
+      </div>
+      <div class="shipping container my-3">
         <Heading :heading="'配送方式'" />
         1.自取 <br />
         2.本公司外務員配送 <br />
         3.lalamove
       </div>
-      <div class="online-inquery my-3">
+      <div class="online-inquery container my-3">
         <Heading :heading="'線上詢價'" />
         1.電話: 02 2513 3105 <br />
         2.Line : @TCT.COM
       </div>
-      <div class="contact-info my-3">
+      <div class="contact-info container my-3">
         <Heading :heading="'聯絡我們'" />
 
         地址:中山區建國北路三段113巷31弄15號1樓, Taipei, Taiwan <br />
@@ -150,10 +165,11 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 import Heading from "../components/Heading.vue";
+import ImageGallery from "../components/ImageGallery.vue";
 export default {
   name: "Home",
   components: {
-    // HelloWorld
+    ImageGallery,
     Heading,
   },
 };
