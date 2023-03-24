@@ -1,11 +1,11 @@
 <template>
   <div class="row" :class="{ 'flex-row-reverse': props.isReverse }">
     <div class="col-sm-5 my-5 text-sm-start">
-      <h1 class="display-2 fw-bold">{{ props.title }}</h1>
+      <h1 class="display-2 fw-bold" @click="test">{{ props.title }}</h1>
       <p class="my-3">
         {{ props.paragraph }}
       </p>
-      <button type="button" class="btn btn-primary fw-bold">
+      <button type="button" class="btn btn-primary fw-bold" @click="cta()">
         {{ props.buttonText }}
       </button>
     </div>
@@ -67,6 +67,7 @@
 </template>
 
 <script setup>
+import { cta_event_log, test } from "../firebase";
 import { defineProps } from "vue";
 const props = defineProps({
   isReverse: { type: Boolean, require: true },
@@ -81,6 +82,10 @@ const props = defineProps({
   imageUrl6: { type: String, require: true },
   imageUrl7: { type: String, require: true },
 });
+const cta = () => {
+  cta_event_log(props.title + '/' + props.buttonText);
+  console.log("cta");
+};
 </script>
 
 <style scoped>

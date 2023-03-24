@@ -152,7 +152,6 @@
       </div>
       <div class="contact-info container my-3">
         <Heading :heading="'聯絡我們'" />
-
         地址:中山區建國北路三段113巷31弄15號1樓, Taipei, Taiwan <br />
         電話: 02 2513 3105 <br />
         營業時間: 週一至週五 08:30-19:00
